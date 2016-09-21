@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0px;
+    position: absolute;
+    min-width: 100%;
+}
+
+@font-face
+{
+    font-family: 'Nike';
+    src: url('../fonts/Nike.otf');
+}
+
+
+
+.hero
+{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    top: -47px;
+    
+}
+.hero img
+{
+    position: ;
+    width: 100%;
+}
+
+/*styles the double bacon cheesburger text in the hero img*/
+.hero h1
+{
+    color: floralwhite;
+    text-align: right;
+    position: absolute;
+    top: 20%;
+    width: 70%;
+    left: 25%;
+    font-size: 70pt;
+    font-family: "Nike";
+    letter-spacing: -3px;
+    line-height: 100%;
+}
+
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    top: 50px;
+    width: 100%;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: floralwhite;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: futura;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.mobile-nav 
+{
+    z-index: 100;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 60px;
+    right: 20px;
+    left: 90%;    
+}
+
+.bacon
+{
+    height: 430px;
+    position: relative;
+}
+
+.bacon p
+{
+    position: absolute;
+    float: left;
+    left: 30px;
+    right: 300px;
+    
+}
+
+.cheese
+{
+    height: 430px;
+    position: relative;
+    background-color: darkgrey;
+}
+
+.cheese p
+{
+    position: absolute;
+    float: left;
+    left: 30px;
+    right: 300px; 
+}
+
+.beef
+{
+    height: 430px;
+    position: relative;
+}
+
+.beef p
+{
+    position: absolute;
+    float: left;
+    left: 30px;
+    right: 300px; 
+}
+
+/*change font size on phone screen*/
+@media screen and (max-width: 800px)
+{
+    .hero h1 {font-size: 50pt; top: 25%}
+    
+}
+
+/*change font size on phone screen*/
+@media screen and (max-width: 552px)
+{
+    .hero h1 {font-size: 30pt; top: 30%}
+    .mobile-nav {width: 30px; height: 30px;}
+}
